@@ -19,6 +19,8 @@ main {
   display: flex;
   flex-direction: column;
   background-color: rgba(102, 102, 204, 0.7);
+  border: 2px solid rgb(62, 62, 124);
+  border-radius: 1rem;
   padding: 0rem 3rem 0rem 3rem;
   border-radius: 1rem;
 }
