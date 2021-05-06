@@ -15,7 +15,9 @@ body {
 }
 
 main {
-  margin: 1rem;
+  margin: 2rem;
+  width: 100%;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   background-color: rgba(102, 102, 204, 0.7);
@@ -64,6 +66,16 @@ main {
   font-size: 2rem;
 }
 
+#logs {
+  border: 2px solid rgb(62, 62, 124);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {width: 1.5rem;height: 1.5rem;}
+::-webkit-scrollbar-thumb:vertical {height:10px;background:rgb(62, 62, 124);}
+::-webkit-scrollbar-thumb:vertical:hover {background:rgb(40, 40, 110);}
+
 table {
   margin: 0.3rem;
   background-color: rgb(188, 188, 255);
@@ -78,42 +90,36 @@ td {
 
 .logType {
   font-size: 2rem;
-  width: 10%;
+  width: 5%;
   padding: 0.5rem;
 }
 
 .message {
   font-size: 2rem;
-  width: 70%;
+  width: 85%;
   padding: 0.5rem;
 }
 
 .logData {
   font-size: 2rem;
-  width: 10%;
+  width: 5%;
   padding: 0.5rem;
 }
 
 .logTime {
   font-size: 2rem;
-  width: 10%;
+  width: 5%;
   padding: 0.5rem;
 }
 
-#login {
-  margin: 2rem 0rem 0rem 1rem;
+.logBlockError .logType{
+  background-color: rgb(255, 176, 50);
 }
 
-#login a{
-  font-size: 2rem;
-  color: rgb(240, 240, 255);
-  padding: 0.5rem;
-  background-color: rgba(102, 102, 204, 0.7);
-  border: 2px solid rgb(62, 62, 124);
-  border-radius: 1rem;
-  text-decoration: none;
+.logBlockFatal .logType{
+  background-color: rgb(255, 50, 50);
 }
 
-#login a:hover{
-  background-color: rgb(62, 62, 124);
+.logBlockInfo .logType{
+  background-color: rgb(47, 255, 110);
 }

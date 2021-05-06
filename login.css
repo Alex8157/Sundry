@@ -47,6 +47,13 @@ form div input{
   outline:none;
 }
 
+.input-option {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: baseline;
+}
+
 #button:hover {
   background-color: rgb(62, 62, 124);
   color: rgb(240, 240, 255);
