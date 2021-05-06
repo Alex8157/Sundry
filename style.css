@@ -68,7 +68,6 @@ table {
   margin: 0.3rem;
   background-color: rgb(188, 188, 255);
   width: 100%;
-  border: 2px solid rgb(102, 51, 153);
   border-radius: 1rem;
   border-collapse: collapse;
 }
