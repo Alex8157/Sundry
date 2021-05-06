@@ -6,44 +6,24 @@
 
 body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:center;
   max-width: 100vw;
   min-height: 100vh;
   background-color: rgba(153, 153, 255, 0.7);
 }
 
-header {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(102, 102, 204, 0.7);
-  padding-bottom: 5rem;
-}
-
-.title {
-  margin-top: 5rem;
-}
-
-.title h1 {
-  font-size: 3rem;
-}
-
 main {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  width: 80%;
   background-color: rgba(102, 102, 204, 0.7);
-  padding: 3rem;
+  padding: 0rem 3rem 0rem 3rem;
   border-radius: 1rem;
 }
 
 #menu {
-  margin: 1rem;
   display: flex;
   flex-direction: row;
 }
@@ -59,93 +39,80 @@ main {
 #date input {
   font-size: 2rem;
   background-color: rgb(188, 188, 255);
-  border: 3px solid rgb(62, 62, 124);outline:none;
+  border: 2px solid rgb(62, 62, 124);
+  outline:none;
 }
 
 #typeSelector {
   margin: 1rem 1rem 1rem 5rem;
 }
 
-#typeSelector input {
-  margin: 1rem;
-}
-
 #typeSelector p {
   font-size: 2rem;
 }
 
-#menu button {
-  margin: 1rem 1rem 1rem 3rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+#typeSelector select {
   font-size: 2rem;
-  border: 3px solid rgb(62, 62, 124);
-  border-radius: 0.5rem;
+  outline:none;
   background-color: rgb(188, 188, 255);
+  border: 2px solid rgb(62, 62, 124);
 }
 
-#menu button:hover {
-  border: 3px solid rgb(42, 42, 84);
-  background-color: rgb(148, 148, 255);
-}
-
-#menu button:active {
-  border: 3px solid rgb(62, 62, 124);
-  background-color: rgb(62, 62, 124);
-  color: rgb(227, 227, 255);
+#typeSelector select option {
+  font-size: 2rem;
 }
 
 table {
-  margin: 1rem;
+  margin: 0.3rem;
   background-color: rgb(188, 188, 255);
   width: 100%;
-  border: 3px solid rgb(102, 51, 153);
+  border: 2px solid rgb(102, 51, 153);
   border-radius: 1rem;
   border-collapse: collapse;
 }
 
 td {
-  border: 3px solid rgb(62 62 124);
+  border: 2px solid rgb(62 62 124);
 }
 
 .logType {
   font-size: 2rem;
   width: 10%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .message {
   font-size: 2rem;
   width: 70%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .logData {
   font-size: 2rem;
   width: 10%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .logTime {
   font-size: 2rem;
   width: 10%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-footer {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  background-color: rgba(102, 102, 204, 0.7);
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+#login {
+  margin: 2rem 0rem 0rem 1rem;
 }
 
-.footer__info {
-  width: 50%;
-}
-
-.footer__info p {
+#login a{
   font-size: 2rem;
-  color: #000;
-  text-align: center;
+  color: rgb(240, 240, 255);
+  padding: 0.5rem;
+  background-color: rgba(102, 102, 204, 0.7);
+  border: 2px solid rgb(62, 62, 124);
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+#login a:hover{
+  background-color: rgb(62, 62, 124);
 }

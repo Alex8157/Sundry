@@ -8,13 +8,6 @@
   <title>logger</title>
 </head>
 <body>
-  <header>
-    <div class="title" id="title">
-      <h1>
-        logger
-      </h1>
-    </div>
-  </header>
   <main>
     <div id="menu">
       <div id="date">
@@ -22,17 +15,14 @@
         <input type="date">
       </div>
       <div id="typeSelector">
-        <form>
-          <p>Логи какого типа вы хотели бы вывести?</p>
-          <p>
-            <input name="logType" type="radio" value="All">All
-            <input name="logType" type="radio" value="Error">Error
-            <input name="logType" type="radio" value="Fatal">Fatal
-            <input name="logType" type="radio" value="Info">Info
-          </p>
-         </form> 
+        <p>Логи какого типа вы хотели бы вывести?</p>
+        <select>
+          <option value="All" style="background-color: rgb(188, 188, 255)">All</option>
+          <option value="Error" style="background-color: rgb(255, 176, 50)">Error</option>
+          <option value="Fatal" style="background-color: rgb(255, 50, 50)">Fatal</option>
+          <option value="Info" style="background-color: rgb(47, 255, 110)">Info</option>
+        </select>
       </div>
-      <button>Вывести</button>
     </div>
 
     <div class="logBlock">
@@ -61,19 +51,213 @@
       <table>
         <tr>
           <td class = "logType">Info</td>
-          <td class = "message">asf b  ob ;gb l;hi vl gcf lo fl yhf; i g;i yf lycf li uygiy fl yufag;rgf93g987tg3t gt92tg p2938t g[23 8tgjgblhfbbaljfbaljsbv;svgb;a ;b;jabf;jabf;abfkab </td>
+          <td class = "message">asf b  ob ;gb l ajffb aobf obof;hi uygiy gf93938t</td>
+          <td class = "logData ">16.04.2021</td>
+          <td class = "logTime">13:15</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Error</td>
+          <td class = "message">asfjgblhfbbaljfbaljsbv;svgb;a ;b;jabf;jabf;abfkab </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:47</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Fatal</td>
+          <td class = "message"> aphauf pf hap8fhgufgapp apf8gapwfgapfg  </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:49</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Info</td>
+          <td class = "message">asf b  ob ;gb l ajffb aobf obof;hi uygiy gf93938t</td>
+          <td class = "logData ">16.04.2021</td>
+          <td class = "logTime">13:15</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Error</td>
+          <td class = "message">asfjgblhfbbaljfbaljsbv;svgb;a ;b;jabf;jabf;abfkab </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:47</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Fatal</td>
+          <td class = "message"> aphauf pf hap8fhgufgapp apf8gapwfgapfg  </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:49</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Info</td>
+          <td class = "message">asf b  ob ;gb l ajffb aobf obof;hi uygiy gf93938t</td>
+          <td class = "logData ">16.04.2021</td>
+          <td class = "logTime">13:15</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Error</td>
+          <td class = "message">asfjgblhfbbaljfbaljsbv;svgb;a ;b;jabf;jabf;abfkab </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:47</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Fatal</td>
+          <td class = "message"> aphauf pf hap8fhgufgapp apf8gapwfgapfg  </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:49</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Info</td>
+          <td class = "message">asf b  ob ;gb l ajffb aobf obof;hi uygiy gf93938t</td>
+          <td class = "logData ">16.04.2021</td>
+          <td class = "logTime">13:15</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Error</td>
+          <td class = "message">asfjgblhfbbaljfbaljsbv;svgb;a ;b;jabf;jabf;abfkab </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:47</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Fatal</td>
+          <td class = "message"> aphauf pf hap8fhgufgapp apf8gapwfgapfg  </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:49</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Info</td>
+          <td class = "message">asf b  ob ;gb l ajffb aobf obof;hi uygiy gf93938t</td>
+          <td class = "logData ">16.04.2021</td>
+          <td class = "logTime">13:15</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Error</td>
+          <td class = "message">asfjgblhfbbaljfbaljsbv;svgb;a ;b;jabf;jabf;abfkab </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:47</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Fatal</td>
+          <td class = "message"> aphauf pf hap8fhgufgapp apf8gapwfgapfg  </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:49</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Info</td>
+          <td class = "message">asf b  ob ;gb l ajffb aobf obof;hi uygiy gf93938t</td>
+          <td class = "logData ">16.04.2021</td>
+          <td class = "logTime">13:15</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Error</td>
+          <td class = "message">asfjgblhfbbaljfbaljsbv;svgb;a ;b;jabf;jabf;abfkab </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:47</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Fatal</td>
+          <td class = "message"> aphauf pf hap8fhgufgapp apf8gapwfgapfg  </td>
+          <td class = "logData ">11.04.2021</td>
+          <td class = "logTime">19:49</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="logBlock">
+      <table>
+        <tr>
+          <td class = "logType">Info</td>
+          <td class = "message">asf b  ob ;gb l ajffb aobf obof;hi uygiy gf93938t</td>
           <td class = "logData ">16.04.2021</td>
           <td class = "logTime">13:15</td>
         </tr>
       </table>
     </div>
   </main>
-  <footer>
-    <div class="footer__info">
-      <p>
-        Если вдруг понадобится (если не понадобится, удалим)
-      </p>
-    </div>
-  </footer>
+  <div id="login">
+    <a href="login.html">Войти</a>
+  </div>
 </body>
 </html>
