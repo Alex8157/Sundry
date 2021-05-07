@@ -6,6 +6,7 @@ document.addEventListener( "DOMContentLoaded", async () => {
     const domDate = createDate( date )
     datesHTML.appendChild( domDate )
   }
+  doLogs()
 } )
 
 let doLogs = async () => 
