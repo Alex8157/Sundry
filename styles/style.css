@@ -40,11 +40,15 @@ main {
   font-size: 2rem;
 }
 
-#date input {
+#dateSelector {
   font-size: 2rem;
   background-color: rgb(188, 188, 255);
   border: 2px solid rgb(62, 62, 124);
   outline:none;
+}
+
+#dateSelector option {
+  font-size: 2rem;
 }
 
 #typeSelector {
@@ -112,14 +116,14 @@ td {
   padding: 0.5rem;
 }
 
-.logBlockError .logType{
+.log_block_error .logType{
   background-color: rgb(255, 176, 50);
 }
 
-.logBlockFatal .logType{
+.log_block_fatal .logType{
   background-color: rgb(255, 50, 50);
 }
 
-.logBlockInfo .logType{
+.log_block_info .logType{
   background-color: rgb(47, 255, 110);
 }
