@@ -83,10 +83,10 @@ const createLog = ( log ) => {
       <div class="table">
           <div class = "logType">${log.logType}</div>
           <div class = "message">
-          ${log.message}<br>
+          ${log.message.replace(new RegExp("\n",'g'),'<br>')}<br>
           <details>
             <summary>stack</summary>
-            <p>${log.stack}</p>
+            <p>${log.stack.replace(new RegExp("\n",'g'),'<br>')}</p>
           </details>
           </div>
           <div class = "logData ">${log.logDate}</div>
@@ -94,19 +94,20 @@ const createLog = ( log ) => {
         </div>
     </div>
     `
+    logHtmlString = logHtmlString.replace(new RegExp("<anonymous>",'g'),'&ltanonymous&gt')
+    logHtmlString = logHtmlString.replace(new RegExp("</anonymous>",'g'),'&l/tanonymous&gt')
   } else {
     logHtmlString = `
     <div class="log_block_${log.logType}">
       <div class="table">
           <div class = "logType">${log.logType}</div>
-          <div class = "message">${log.message}</div>
+          <div class = "message">${log.message.replace(new RegExp("\n",'g'),'&ltbr&gt')}</div>
           <div class = "logData ">${log.logDate}</div>
           <div class = "logTime">${log.logTime}</div>
         </div>
     </div>
     `
   }
-  logHtmlString.replace('\n','<br>')
   return createDomElement( logHtmlString )
 }
 
