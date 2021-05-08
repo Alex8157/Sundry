@@ -95,24 +95,28 @@ main {
 }
 
 .logType {
+  box-sizing: border-box;
   font-size: 2rem;
   width: 5%;
   padding: 0.5rem;
 }
 
 .message {
+  box-sizing: border-box;
   font-size: 2rem;
-  width: 75%;
+  width: 80%;
   padding: 0.5rem;
 }
 
 .logData {
+  box-sizing: border-box;
   font-size: 2rem;
   width: 8%;
   padding: 0.5rem;
 }
 
 .logTime {
+  box-sizing: border-box;
   font-size: 2rem;
   width: 7%;
   padding: 0.5rem;
