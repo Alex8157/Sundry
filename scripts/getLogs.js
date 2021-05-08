@@ -78,14 +78,12 @@ const getLogs = async ( token, date ) => {
 const createLog = ( log ) => {
     const logHtmlString = `
     <div class="log_block_${log.logType}">
-      <table>
-        <tr>
-          <td class = "logType">${log.logType}</td>
-          <td class = "message">${log.message}</td>
-          <td class = "logData ">${log.logDate}</td>
-          <td class = "logTime">${log.logTime}</td>
-        </tr>
-      </table>
+      <div class="table">
+          <div class = "logType">${log.logType}</div>
+          <div class = "message">${log.message}</div>
+          <div class = "logData ">${log.logDate}</div>
+          <div class = "logTime">${log.logTime}</div>
+        </div>
     </div>
     `
   return createDomElement( logHtmlString )
