@@ -94,6 +94,14 @@ main {
   word-wrap:break-word;
 }
 
+details summary{
+  font-size: 2rem;
+}
+
+details p{
+  font-size: 2rem;
+}
+
 .logType {
   box-sizing: border-box;
   font-size: 2rem;

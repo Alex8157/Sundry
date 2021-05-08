@@ -76,7 +76,26 @@ const getLogs = async ( token, date ) => {
 }
 
 const createLog = ( log ) => {
-    const logHtmlString = `
+  let logHtmlString = ''
+  if( log.stack != '') {
+    logHtmlString = `
+    <div class="log_block_${log.logType}">
+      <div class="table">
+          <div class = "logType">${log.logType}</div>
+          <div class = "message">
+          ${log.message}<br>
+          <details>
+            <summary>stack</summary>
+            <p>${log.stack}</p>
+          </details>
+          </div>
+          <div class = "logData ">${log.logDate}</div>
+          <div class = "logTime">${log.logTime}</div>
+        </div>
+    </div>
+    `
+  } else {
+    logHtmlString = `
     <div class="log_block_${log.logType}">
       <div class="table">
           <div class = "logType">${log.logType}</div>
@@ -86,6 +105,8 @@ const createLog = ( log ) => {
         </div>
     </div>
     `
+  }
+  logHtmlString.replace('\n','<br>')
   return createDomElement( logHtmlString )
 }
 
